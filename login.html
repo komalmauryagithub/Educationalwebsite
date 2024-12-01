@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #FFE1FF;
+            background: url("https://allea.org/wp-content/uploads/2019/06/shutterstock_520698799small.jpg");
+            opacity: rgba(0, 0, 0, 0.5);
+            /* Black with 50% opacity */
+            background-repeat: no-repeat;
+
+        }
+
+        body::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        img {
+           
+
+           vertical-align: middle;
+
+       }
+       .mid {
+
+background-color: #433878;
+border: 5px solid #7E60BF;
+width: 96%;
+position: fixed;
+z-index: 1;
+left:0;
+top: 0;
+padding: 0 20px;
+/* border-radius: 10px; */
+margin: 0 0 0px auto;
+
+
+}
+
+
+        .navbar {
+            top: 0;
+            width: 100%;
+            position: relative;
+            /* position: fixed; */
+            padding: 0px 0px;
+            background-color: #433878;
+            z-index: 10;
+            /* position:fixed; */
+            display: inline-block;
+        }
+
+        .navbar li {
+            /* position:fixed; */
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* background-color: burlywood; */
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .navbar li a {
+
+            color: rgb(245, 244, 244);
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+
+        .navbar li a:hover {
+            background-color: #f4f2fb;
+            text-decoration: underline;
+            color: black;
+        }
+
+        .btn {
+            position: absolute;
+            z-index: 5;
+
+            top: 15px;
+            right: 7%;
+            padding: 7px 15px;
+            font-size: 20px;
+            color: black;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: white;
+            transform: translate(-5%);
+            position: fixed;
+            text-decoration: none;
+
+        }
+
+        .btn:hover {
+            color: rgb(12, 11, 85);
+            background-color: rgb(240, 237, 237);
+        }
+
+        .btn1 {
+            position: absolute;
+            top: 15px;
+            z-index: 5;
+
+            right: 15%;
+            padding: 7px 15px;
+            font-size: 20px;
+            color: black;
+            position: fixed;
+
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: white;
+            /* transform: translate(-5%); */
+
+
+        }
+
+        .btn1:hover {
+            color: rgb(12, 11, 85);
+            background-color: rgb(240, 237, 237);
+        }
+
+        label {
+            text-decoration: solid;
+            font-size: 20px;
+            text-align: center;
+            margin:0px 0px 0px 80px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        }
+
+        .container {
+            background-color: #f9f4f9;
+            width: 40%;
+            left: 30%;
+            top: 80px;
+            /* margin: 30px; */
+            /* padding: 2px 0; */
+            position: absolute;
+            /* text-align: center; */
+            border-radius: 20px;
+            border: 5px solid black;
+        }
+
+        input {
+            padding: 5px 70px;
+            margin:0px 0px 0px 80px;
+            border-radius: 8px;
+
+        }
+
+        button {
+            margin:0px 0px 0px 150px;
+
+            font-size: 20px;
+            color: #f6f5f9;
+            border-radius: 10px;
+            padding: 5px 70px;
+            background-color: purple;
+        }
+
+        button:hover {
+            background-color: antiquewhite;
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mid">
+        <ul class="navbar">
+            <img src="https://img.freepik.com/premium-vector/education-logo-white-background_1277164-19941.jpg?semt=ais_hybrid"
+            height="35px" width="35px"></img>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="Gallery.html">Events Gallery</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <button class="btn"><a href="login.html">Log in</a></button>
+    <button class="btn1"><a href="register.html">Register now</a></button>
+
+    <form class="container">
+<pre>
+</pre>
+         <h1>Log in:</h1>
+    <label>Username:</label><br><br>
+    <input type="text" id="password"><br><br>
+    <label>Password:</label><br><br>
+    <input type="text" id="password"><br><br><br>
+    <button type="submit">Submit</button><br><br><br>
+    </form>
+</body>
+
+</html>

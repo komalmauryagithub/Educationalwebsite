@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #FFE1FF;
+            background: url("https://allea.org/wp-content/uploads/2019/06/shutterstock_520698799small.jpg");
+            /* position: fixed; */
+            background-attachment: fixed;
+            width: 100%;
+            background-repeat: no-repeat;
+            /* position: fixed; */
+
+        }
+
+        body::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 302%;
+            content: "";
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .mid {
+
+            background-color: #433878;
+            border: 5px solid #7E60BF;
+            width: 96%;
+            left: 0;
+            position: fixed;
+            z-index: 1;
+
+            top: 0;
+            padding: 0 20px;
+            /* border-radius: 10px; */
+            margin: 0 0 0px auto;
+
+
+        }
+
+        img {
+
+
+            vertical-align: middle;
+
+        }
+
+        .navbar {
+            top: 0;
+            width: 100%;
+            position: relative;
+            /* position: fixed; */
+            padding: 0px 0px;
+            background-color: #433878;
+            z-index: 10;
+            /* position:fixed; */
+            display: inline-block;
+        }
+
+        .navbar li {
+            /* position:fixed; */
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* background-color: burlywood; */
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .navbar li a {
+
+            color: rgb(245, 244, 244);
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+
+        .navbar li a:hover {
+            background-color: #f4f2fb;
+            text-decoration: underline;
+            color: black;
+        }
+
+
+        .navbar li a:active {
+            background-color: rgb(214, 220, 225);
+            text-decoration: underline;
+            color: black;
+        }
+
+        .btn a {
+            position: absolute;
+            z-index: 5;
+
+            top: 15px;
+            right: 7%;
+            padding: 7px 15px;
+            font-size: 20px;
+            color: black;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: white;
+            transform: translate(-5%);
+            position: fixed;
+            text-decoration: none;
+
+        }
+
+        .btn a:hover {
+            color: rgb(21, 29, 145);
+            text-decoration: underline;
+            background-color: rgb(240, 237, 237);
+        }
+
+        .btn1 a {
+            position: absolute;
+            top: 15px;
+            z-index: 5;
+            text-decoration: none;
+            right: 15%;
+            padding: 7px 15px;
+            font-size: 20px;
+            color: black;
+            position: fixed;
+
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: white;
+            /* transform: translate(-5%); */
+
+
+        }
+
+        .btn1 a:hover {
+            color: rgb(21, 29, 145);
+            text-decoration: underline;
+            background-color: rgb(240, 237, 237);
+        }
+
+
+        h1 {
+            position: relative;
+            width: 98%;
+            font-size: 40px;
+            color: white;
+            font-style: italic;
+            border-left: 20px solid rgb(8, 8, 19);
+            background-color: #433878;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            width: 98%;
+            font-size: 20px;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h2 {
+            position: relative;
+            font-style: italic;
+            color: white;
+            font-size: 30px;
+            border-left: 20px solid rgb(8, 8, 19);
+            /* background-color: rgb(67, 67, 192); */
+            background-color: #584c93;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        hr{
+            position: relative;
+            width: 100%;
+            height: 5px;
+            background-color: rgb(138, 76, 145);
+        }
+  
+
+        footer h1 {
+            text-decoration: none;
+            font-size: 30px;
+            background-color: #774482;
+            color: white;
+            width: 96%;
+            left: 0;
+            padding: 10px;
+        }
+
+        footer a {
+            position: relative;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        footer a:hover {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mid">
+        <ul class="navbar">
+            <img src="https://img.freepik.com/premium-vector/education-logo-white-background_1277164-19941.jpg?semt=ais_hybrid"
+                height="35px" width="35px"></img>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="Gallery.html">Events Gallery</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <button class="btn"><a href="login.html">Log in</a></button>
+    <button class="btn1"><a href="register.html" type="_blank">Register now</a></button>
+    <div class="courses">
+        <br><br><br>
+        <h1>Available courses</h1><br>
+        <h1>Commerce Degrees</h1>
+        <p>
+            1.Bachelor of Commerce (B.Com)<br>
+            2.Bachelor of Business Administration (BBA)<br>
+            3.Bachelor of Management Studies (BMS)<br>
+            4.Bachelor of Business Studies (BBS)<br>
+            5.Bachelor of Accountancy (BAcc)<br>
+            6.Bachelor of Finance (BFin)<br>
+            7.Bachelor of Economics (BEcon)<br> 8.Bachelor of Marketing (BMark)<br>
+            9.Bachelor of International Business (BIB)<br>
+            10.Bachelor of Human Resource Management (BHRM)
+        </p>
+        <h2>Postgraduate Degrees in Commerce</h2>
+        <p>
+            1.Master of Commerce (M.Com)<br>
+            2.Master of Business Administration (MBA)<br>
+            3.Master of Finance (MFin)<br>
+            4.Master of Economics (MEcon)<br>
+            5.Master of Accounting (MAcc)<br>
+            6.Master of International Business (MIB)<br>
+            7.Master of Marketing (MMkt)<br>
+            8.Master of Business Economics (MBE)
+        </p>
+        <h1>Science Degrees
+        </h1>
+        <p>1.Bachelor of Science (B.Sc) – General or with specialization in fields like Biology, Chemistry, Physics,
+            etc.<br>
+            2.Bachelor of Computer Science (B.Sc CS)<br>
+            3.Bachelor of Science in Information Technology (B.Sc IT)<br>
+            4.Bachelor of Environmental Science (B.Sc Env Sci)<br>
+            5.Bachelor of Science in Nursing (B.Sc Nursing)<br>
+            6.Bachelor of Science in Biotechnology (B.Sc Biotech)<br>
+            7.Bachelor of Science in Mathematics (B.Sc Math)<br>
+            8.Bachelor of Science in Physics (B.Sc Physics)<br>
+            9.Bachelor of Science in Agriculture (B.Sc Agri)<br>
+            10.Bachelor of Science in Geology (B.Sc Geology)</p>
+        <h2>Postgraduate Degrees in Science</h2>
+        <p>
+            1.Master of Science (M.Sc) – General or in fields like Biology, Physics, Chemistry, etc.<br>
+            2.Master of Computer Science (M.Sc CS)<br>
+            3.Master of Science in Information Technology (M.Sc IT)<br>
+            4.Master of Environmental Science (M.Sc Env Sci)<br>
+            5.Master of Biotechnology (M.Sc Biotech)<br>
+            6.Master of Science in Mathematics (M.Sc Math)<br>
+            7.Master of Science in Physics (M.Sc Physics)<br>
+            8.Master of Science in Data Science (M.Sc Data Sci)<br>
+            9.Master of Science in Chemistry (M.Sc Chem)<br>
+            10.Master of Science in Geology (M.Sc Geology)
+        </p>
+    </div>
+    <hr>
+    <footer>
+        <pre>
+
+                                                 <a href="index.html">Home</a>   <a href="about.html">About us</a>   <a href="contact.html">Contact us</a>   <a href="courses.html">Courses</a>   <a href="register.html">Register</a>    <a href="login.html">Login</a>
+        </pre>
+<div class="h3">
+    
+    <h1>Copyright&copy;2024 | All rights reserved | Official website of Indira Gandhi Mahavidyaly</h1>
+</div>
+    </footer>
+</body>
+
+</html>
